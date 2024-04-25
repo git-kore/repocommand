@@ -16,3 +16,10 @@ Coomands
 9. Generate SSH key: ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 10: copy ssh key: cat <paste Path> # Add this key to your GitHub account
 11. git push origin master
+
+12. if u changed something and want to update then use
+    git add . 
+    git commit -m "Initial Commit"
+    git push origin master
+    
+    
