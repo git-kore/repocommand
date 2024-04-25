@@ -1,14 +1,18 @@
 Coomands
-1. View Existing Remotes: git remote -v
-2.Change the Remote URL: git remote set-url origin <new-remote-url>
-3.touch .gitignore
-git config --global user.name Harry
-git config --global user.email youremail@example.com
-git init
-git add .
-git commit -m "Initial Commit"
-git status # Just to see
-ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
-tail <path to id_rsa.pub> # Add this key to your GitHub account
-git remote add orign <ssh url.git>
-git push origin master
+1. Check user name & email : git config user.name
+                              git config user.email
+2. If not Then Use: git config --global user.name "name"
+                    git config --global user.email "youremail@example.com"
+
+
+3. View Existing Remotes origin: git remote -v
+4.if any exist then Change to new Remote URL: git remote set-url origin <new-remote-url>
+5. if not then use : git remote add orign <ssh url.git>
+
+5. git init
+6. git add .
+7. git commit -m "Initial Commit"
+8. git status # Just to see
+9. Generate SSH key: ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+10: copy ssh key: cat <paste Path> # Add this key to your GitHub account
+11. git push origin master
